@@ -1,29 +1,40 @@
 
-import React from "react"
+import React, { useEffect } from "react"
 import '../../App.css';
-import MenuIcon from '@mui/icons-material/Menu';
 import {useState} from "react"
+import CloseIcon from '@mui/icons-material/Close';
 
 function SideBar(props) {
     
     const [menuState,setMenuState] = useState(props.sideBarState);
+    console.log("props", props.sideBarState)
+    console.log("menu", menuState)
 
     const handleClick = ()=>{
     
-        if(menuState === "closed"){
-          setMenuState("opened")
-        }
-        else{
+        if(menuState === "opened"){
           setMenuState("closed")
         }
-        console.log(menuState);
+       
+        console.log("handleclick", menuState);
       }
 
-    console.log("in side Bar", props.sideBarState)
+      useEffect(() => {
+        console.log("in UseEffect")
+      }, menuState)
+
+    
 
     return (
       <div className = {`${props.sideBarState}`}>
-        SideBar  
+          <div className="sidebarHeader">  
+            <div className="sidebarHeading">
+              <p>SideBar</p>
+            </div>  
+            <div> 
+                <CloseIcon onClick = {handleClick}/>
+            </div>
+            </div>
       </div>
     );
   }

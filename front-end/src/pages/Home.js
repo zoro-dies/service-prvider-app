@@ -3,20 +3,16 @@ import '../App.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import SideBar from "./Components/SideBar";
 import {useState} from "react"
+import {useSelector, useDispatch} from 'react-redux'
+
+import {open} from '../redux/menuSlice'
 
 function Home() {
 
-  const [menuState,setMenuState] = useState("closed");
-
+  const menu = useSelector((state) => state.menu.value)
+  console.log(menu)
   const handleClick = ()=>{
-    
-    if(menuState === "closed"){
-      setMenuState("opened")
-    }
-    else{
-      setMenuState("closed")
-    }
-    console.log(menuState);
+   
   }
  
 
@@ -35,7 +31,7 @@ function Home() {
             <div>Home Page </div>
         </div>
 
-          <SideBar sideBarState = {menuState}/>
+          <SideBar />
           
         
 
