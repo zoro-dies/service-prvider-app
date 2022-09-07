@@ -10,10 +10,9 @@ import {open} from '../redux/menuSlice'
 function Home() {
 
   const menu = useSelector((state) => state.menu.value)
+  const dispatch = useDispatch()
   console.log(menu)
-  const handleClick = ()=>{
-   
-  }
+  
  
 
     return (
@@ -21,7 +20,7 @@ function Home() {
         
         <div className="header">
             <div>
-            <MenuIcon onClick = {handleClick}/> 
+            <MenuIcon onClick={() => dispatch(open())}/> 
             </div>
 
             <div >
@@ -31,7 +30,9 @@ function Home() {
             <div>Home Page </div>
         </div>
 
-          <SideBar />
+        <SideBar />
+
+        <div>hello</div>
           
         
 

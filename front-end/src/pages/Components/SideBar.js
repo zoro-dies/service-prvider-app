@@ -3,36 +3,32 @@ import React, { useEffect } from "react"
 import '../../App.css';
 import {useState} from "react"
 import CloseIcon from '@mui/icons-material/Close';
+import {useSelector, useDispatch} from 'react-redux'
+import {close} from '../../redux/menuSlice'
+
 
 function SideBar(props) {
     
-    const [menuState,setMenuState] = useState(props.sideBarState);
-    console.log("props", props.sideBarState)
-    console.log("menu", menuState)
+  const menu = useSelector((state) => state.menu.value)
+  const dispatch = useDispatch()
+  console.log(menu)
 
-    const handleClick = ()=>{
     
-        if(menuState === "opened"){
-          setMenuState("closed")
-        }
-       
-        console.log("handleclick", menuState);
-      }
 
       useEffect(() => {
         console.log("in UseEffect")
-      }, menuState)
+      }, menu)
 
     
 
     return (
-      <div className = {`${props.sideBarState}`}>
+      <div className = {`${menu}`}>
           <div className="sidebarHeader">  
             <div className="sidebarHeading">
-              <p>SideBar</p>
+              <p>Menu</p>
             </div>  
-            <div> 
-                <CloseIcon onClick = {handleClick}/>
+            <div className="closeIcon"> 
+                <CloseIcon onClick={() => dispatch(close())}/>
             </div>
             </div>
       </div>
