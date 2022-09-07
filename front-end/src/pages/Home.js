@@ -32,7 +32,28 @@ function Home() {
 
         <SideBar />
 
-        <div>hello</div>
+        <div className="homeContainer">
+         
+          
+          <div className="productCard">
+            <img className="productImg" src = "fb.jpeg" alt = "Logo" />
+            <p>Facebook Services</p>
+          </div>
+
+          
+            
+          
+          <div className="productCard">
+          <img className="productImg" src = "insta.jpeg" alt = "Logo" />
+          <p>Instagram Services</p>
+          </div>
+
+          <div className="productCard">
+          <img className="productImg" src = "twitter.jpeg" alt = "Logo" />
+          <p>Twitter Services</p>
+          </div>
+          
+        </div>
           
         
 
