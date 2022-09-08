@@ -32,6 +32,8 @@ function Home() {
 
         <SideBar />
 
+        <div className="title">Social Media Services</div>
+
         <div className="homeContainer">
          
           

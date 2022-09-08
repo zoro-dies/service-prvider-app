@@ -1,10 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './pages/Home';
+import SingleService from './pages/SingleService';
+import{
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  Navigate
+} from "react-router-dom";
+
+
+
 
 function App() {
   return (
-    <Home/>
+    <Router>
+
+    <Routes>
+      <Route exact path = "/" element = {<Home/>} />
+      <Route exact path = "/product/:id" element = {<SingleService/>} />
+    </Routes>
+
+    </Router>
   );
 }
 
