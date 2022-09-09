@@ -152,12 +152,17 @@
 
   padding: 50px;
   display: flex;
+  
 
 }
 
 .imGContainer{
 
   flex : 1;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -171,91 +176,28 @@
 .descContainer{
   flex : 1;
   padding: 0px 50px;
-}
-.descTitle{
-
-  font-weight: 200;
-
-}
-.desc{
-  margin: 20px 0px;
-}
-.price{
-  font-weight: 300;
-  font-size: 30px;
-}
-
-.filtersContainer{
-
-  padding-top: 25px;
   display: flex;
-  justify-content: space-between;
-  width: 60%
+  align-items: center;
+  justify-content:flex-start;
+  border-left: solid 0.5px #282c34;
+
+ 
+
 }
 
-.filterTitle{
-  font-size: 25px;
-  font-weight: 400;
-  margin-right: 10px;
-}
+.singleProductCard{
 
-.colorFilterContainer{
+  width: 500px;
+  height: 700px;
+  margin:  10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-}
-
-.filterColor{
-  display: 'flex';
-  margin : 3px;
-  width : 30px;
-  height: 30px;
-  border-radius : 50%;
-  background-color: "${props=>.props.color}";
-  cursor: pointer;
-}
-
-
-.addContainer{
-  margin-top: 25px;;
-  width : 60%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 
 }
 
-.amountContainer{
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-}
-
-.amount{
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
-  border: 1px solid teal;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px 5px;
-
-}
-
-.addButton{
-  padding: 10px;
-  border : 2px solid teal;
-  border-radius: 10px;
-  background-color: white;
-  cursor: pointer; 
-  font-weight: 700;
-
-  
-
-}
-
-.addButton:hover{
-  background-color: lightgray;
+.singleProductImg{
+  width: 450px;
+  height: 650px;
 }

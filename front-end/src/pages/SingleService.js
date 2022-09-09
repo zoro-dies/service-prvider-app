@@ -28,44 +28,21 @@ function SingleService() {
         </div>
 
         <SideBar />
-        <div className='productWrapper'>
 
+        <div className="title">Social Media Services</div>
+
+            <div className='productWrapper'>
 
             
-                <img  src = "twitter.jpeg" alt = "Logordt" />
-           
-      
-            <div className='descContainer'>
-                <h1>Title</h1>
-                <p className='desc'>uhqskjaknc  lkqwsa  jd;kl  ewqkldq;  wskdl  ;wqsakd;sakd;sl''d' </p>
-                <span className='price'> $ 100 </span>
-
-                <div className='filtersContainer'>
-                 
-                    <span className='filterTitle'> Size </span>
-
-                    <select className='select' name = "size"  >
-                        <option disabled selected>
-                            Size
-                        </option>
-                        <option>size</option>
-                        
-                        
-                    </select>
-
-                    </div>
+                <div className="imGContainer">
+                    <img className="singleProductImg" src = "/fb.jpeg" alt = "Logo" />
+                    
                 </div>
 
-                <div className='addContainer'>
-
-                    <div className='amountContainer'>
-                        {/* <Remove /> */}
-                        <span className='amount'> 1 </span>
-                        {/* <Add /> */}
-                    </div>
-
-                    <button className='addButton' > Add To Cart</button>
+                <div className="descContainer">
+                    <h1>Title</h1>
                 </div>
+        
 
             </div>
 
