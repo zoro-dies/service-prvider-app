@@ -182,7 +182,6 @@
   border-left: solid 0.5px #282c34;
 
  
-
 }
 
 .singleProductCard{
@@ -200,4 +199,51 @@
 .singleProductImg{
   width: 450px;
   height: 650px;
+}
+
+.prodInfo{
+
+  flex : 1;
+  
+  padding : 20px;
+  
+}
+
+.filterContainer{
+
+  padding-top : 20px;
+  
+
+}
+
+.filter{
+
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 10px 100px;
+ 
+
+}
+
+.select{
+
+  padding : 5px 20px;
+  
+}
+
+.buttonContainer{
+
+  padding : 20px;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.button{
+
+  padding: 10px;
+  border-radius: 10px;
+  background-color:rgb(228, 255, 255);
 }
