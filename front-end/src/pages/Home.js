@@ -6,6 +6,7 @@ import {useState} from "react"
 import {useSelector, useDispatch} from 'react-redux'
 
 import {open} from '../redux/menuSlice'
+import Header from "./Components/Header";
 
 function Home() {
 
@@ -18,18 +19,8 @@ function Home() {
     return (
       <div className="home">
         
-        <div className="header">
-            <div>
-            <MenuIcon onClick={() => dispatch(open())}/> 
-            </div>
-
-            <div >
-                <img className="header-logo" src = "logo.jpeg" alt = "Logo" />
-            </div>
-            
-            <div>Home Page </div>
-        </div>
-
+        <Header/>
+   
         <SideBar />
 
         <div className="title">Social Media Services</div>

@@ -4,7 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import {useState} from "react"
 import {useSelector, useDispatch} from 'react-redux'
 import SideBar from "./Components/SideBar"
-
+import Header from "./Components/Header";
 import {open} from '../redux/menuSlice'
 
 function SingleService() {
@@ -15,17 +15,7 @@ function SingleService() {
     return(
         <div>
             
-            <div className="header">
-            <div>
-            <MenuIcon onClick={() => dispatch(open())}/> 
-            </div>
-
-            <div >
-                <img className="header-logo" src = "logo.jpeg" alt = "Logo" />
-            </div>
-            
-            <div>Home Page </div>
-        </div>
+          <Header/>
 
         <SideBar />
 
