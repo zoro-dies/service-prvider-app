@@ -181,7 +181,7 @@
   justify-content:flex-start;
  
   border-radius: 20px;
-  background-color: rgb(243, 242, 242);
+  background-color: rgb(207, 219, 207);
 
  
 }
@@ -222,17 +222,23 @@
 .filter{
 
   width:  50%;
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(247, 247, 247);
   display: flex;
   align-items: center;
   justify-content:space-between;
   padding: 20px 100px;
   margin : 20px;
   border-radius: 10px;
+  border : solid transparent 2px; 
  
 
 }
 
+.filter:hover{
+  
+  border : solid goldenrod 2px;
+ 
+}
 .select{
 
   padding : 5px 20px;
@@ -252,7 +258,8 @@
 
   padding: 10px;
   border-radius: 10px;
-  background-color:lightgray
+  background-color:#f5b326;
+  border : none;
 }
 
 
@@ -269,12 +276,12 @@
 
 .cartContainer{
 
-  background-color: rgb(252, 248, 248) ;
+  background-color:rgb(207, 219, 207) ;
   display: flex;
   border-radius: 30px;
   padding: 30px;
   margin: 100px;
-  height: 550px;
+  height: 570px;
 }
 
 .card{
@@ -301,12 +308,14 @@
  margin : 30px 0px;
  display: flex;
 
+ border-bottom: solid 2px #ffae00;
+
 }
 .cartImage{
 
 
-  height: 100%;
-  width: 20%;
+  height: 90%;
+  width: 15%;
 }
 .cartImg{
 
@@ -326,7 +335,7 @@
   margin : 30px;
   padding: 5px;
   height: fit-content;
-  border-bottom: solid 2px #ffae00;
+ 
 
 }
 
@@ -336,4 +345,59 @@
   padding: 30px;
   margin : 10px;
   border-radius: 10px;
+}
+
+
+.summaryRow{
+
+  padding: 20px;
+  border-bottom: solid 1px #ffae00;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.summaryItem{
+
+  font-size: 25px;
+  font-weight: 300;
+}
+
+
+.summaryPrice{
+
+  font-size: 25px;
+  font-weight: 500;
+  
+}
+
+
+.checkoutDiv{
+  width : 100%;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkoutBtn{
+  width : 70%;
+
+  margin : 30px 30px;
+  padding : 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f5b326;
+  font-size: 20px;
+  font-weight: light;
+  border: none;
+  border-radius: 5px;
+
+}
+.removeItem{
+  width : 100%;
+  float : right;
+  
 }
